@@ -1,0 +1,33 @@
+role_families:
+  - software_engineering
+  - sales
+  - customer_service
+  - finance
+  - operations
+  - leadership
+  - graduate
+
+skill_domains:
+  - programming
+  - cognitive_ability
+  - personality_behavior
+  - language
+  - situational_judgement
+  - job_knowledge
+
+seniority:
+  - entry
+  - mid
+  - senior
+  - manager
+  - executive
+
+test_type_codes:
+  A: Ability and Aptitude
+  B: Biodata and Situational Judgement
+  C: Competencies
+  D: Development and 360
+  E: Assessment Exercises
+  K: Knowledge and Skills
+  P: Personality and Behavior
+
