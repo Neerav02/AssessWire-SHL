@@ -104,8 +104,9 @@ def run_checks():
             headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
             r_url = client.get(url, headers=headers, follow_redirects=True)
             print(f"Resolved with status: {r_url.status_code}")
-            assert r_url.status_code in [200, 403, 405], f"Recommendation URL {url} returned unexpected status {r_url.status_code}"
+            assert r_url.status_code == 200, f"Recommendation URL {url} did not resolve with HTTP 200 (got {r_url.status_code})"
             assert "shl.com" in url, f"URL {url} is not an shl.com URL"
+            assert url != "https://www.shl.com/", f"URL {url} is the generic homepage, expected specific product catalog URL"
         print("CHECK 5 SUCCESSFUL")
     except Exception as e:
         print(f"CHECK 5 FAILED: {e}")

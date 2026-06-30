@@ -30,10 +30,28 @@ def main() -> None:
 
     cleaned_records = []
 
+    url_map = {
+        "SHL Verify Numerical Reasoning Test": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-numerical-reasoning/",
+        "SHL Verify Inductive Reasoning Test": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-inductive-reasoning/",
+        "SHL Verify Deductive Reasoning Test": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-deductive-reasoning/",
+        "SHL Verify G+ (General Ability Test)": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-g/",
+        "SHL Verify Verbal Reasoning Test": "https://www.shl.com/products/product-catalog/view/verify-verbal-ability-next-generation/",
+        "Occupational Personality Questionnaire (OPQ32)": "https://www.shl.com/products/product-catalog/view/occupational-personality-questionnaire-opq32r/",
+        "SHL Verify Calculation Test": "https://www.shl.com/products/product-catalog/view/shl-verify-interactive-numerical-calculation/",
+        "SHL Verify Checking Test": "https://www.shl.com/products/product-catalog/view/verify-technical-checking-next-generation/",
+        "SHL Verify Mechanical Comprehension Test": "https://www.shl.com/products/product-catalog/view/mechanical-focus-8-0/",
+        "SHL Situational Judgment Test (SJT)": "https://www.shl.com/products/product-catalog/view/graduate-scenarios/",
+        "SHL Java Programming Test": "https://www.shl.com/products/product-catalog/view/java-8-new/",
+        "SHL C++ Programming Test": "https://www.shl.com/products/product-catalog/view/c-programming-new-4122/",
+        "SHL Python Coding Test": "https://www.shl.com/products/product-catalog/view/python-new/",
+        "SHL Customer Service Situational Judgment Test": "https://www.shl.com/products/product-catalog/view/customer-service-phone-simulation/",
+        "SHL Sales Personality Assessment": "https://www.shl.com/products/product-catalog/view/entry-level-sales-solution/"
+    }
+
     for item in raw_data:
         name = item.get("name", "")
-        # Map target URL to the active and official SHL homepage
-        url = "https://www.shl.com/"
+        # Map target URL to the active and official SHL product catalog
+        url = url_map.get(name, "https://www.shl.com/")
         description = item.get("description", "")
         duration_minutes = item.get("duration_minutes")
         test_type_code = item.get("test_type_code", "")
