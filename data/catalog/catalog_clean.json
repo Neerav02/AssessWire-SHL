@@ -1,7 +1,7 @@
 [
   {
     "assessment_name": "SHL Verify Numerical Reasoning Test",
-    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-numerical-reasoning/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Ability and Aptitude"
     ],
@@ -24,7 +24,7 @@
   },
   {
     "assessment_name": "SHL Verify Inductive Reasoning Test",
-    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-inductive-reasoning/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Ability and Aptitude"
     ],
@@ -45,7 +45,7 @@
   },
   {
     "assessment_name": "SHL Verify Deductive Reasoning Test",
-    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-deductive-reasoning/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Ability and Aptitude"
     ],
@@ -67,7 +67,7 @@
   },
   {
     "assessment_name": "SHL Verify G+ (General Ability Test)",
-    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-g-plus/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Ability and Aptitude"
     ],
@@ -88,7 +88,7 @@
   },
   {
     "assessment_name": "SHL Verify Verbal Reasoning Test",
-    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-verbal-reasoning/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Ability and Aptitude"
     ],
@@ -109,7 +109,7 @@
   },
   {
     "assessment_name": "Occupational Personality Questionnaire (OPQ32)",
-    "url": "https://www.shl.com/en/assessments/personality-behavior/opq/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Personality and Behavior"
     ],
@@ -131,7 +131,7 @@
   },
   {
     "assessment_name": "SHL Verify Calculation Test",
-    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-calculation/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Ability and Aptitude"
     ],
@@ -154,7 +154,7 @@
   },
   {
     "assessment_name": "SHL Verify Checking Test",
-    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-checking/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Ability and Aptitude"
     ],
@@ -174,7 +174,7 @@
   },
   {
     "assessment_name": "SHL Verify Mechanical Comprehension Test",
-    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-mechanical-comprehension/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Ability and Aptitude"
     ],
@@ -195,7 +195,7 @@
   },
   {
     "assessment_name": "SHL Situational Judgment Test (SJT)",
-    "url": "https://www.shl.com/en/assessments/personality-behavior/situational-judgment/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Personality and Behavior"
     ],
@@ -215,7 +215,7 @@
   },
   {
     "assessment_name": "SHL Java Programming Test",
-    "url": "https://www.shl.com/en/assessments/skills-knowledge/coding-java/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Knowledge and Skills"
     ],
@@ -237,7 +237,7 @@
   },
   {
     "assessment_name": "SHL C++ Programming Test",
-    "url": "https://www.shl.com/en/assessments/skills-knowledge/coding-cpp/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Knowledge and Skills"
     ],
@@ -258,7 +258,7 @@
   },
   {
     "assessment_name": "SHL Python Coding Test",
-    "url": "https://www.shl.com/en/assessments/skills-knowledge/coding-python/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Knowledge and Skills"
     ],
@@ -281,7 +281,7 @@
   },
   {
     "assessment_name": "SHL Customer Service Situational Judgment Test",
-    "url": "https://www.shl.com/en/assessments/personality-behavior/customer-service-sjt/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Personality and Behavior"
     ],
@@ -303,7 +303,7 @@
   },
   {
     "assessment_name": "SHL Sales Personality Assessment",
-    "url": "https://www.shl.com/en/assessments/personality-behavior/sales-personality/",
+    "url": "https://www.shldirect.com/en/practice-tests",
     "test_type": [
       "Personality and Behavior"
     ],
