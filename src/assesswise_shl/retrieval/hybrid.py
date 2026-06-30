@@ -59,8 +59,8 @@ class HybridRetriever:
         return records
 
     def _score(self, record: CatalogRecord, query: RetrievalQuery) -> RetrievalResult:
-        query_terms = set(query.text.lower().split())
-        record_terms = set(record.searchable_text().split())
+        query_terms = self._tokenize(query.text)
+        record_terms = self._tokenize(record.searchable_text())
         overlap = query_terms.intersection(record_terms)
         score = float(len(overlap))
         reasons = [f"matched term: {term}" for term in sorted(overlap)]
@@ -76,4 +76,25 @@ class HybridRetriever:
             reasons.append("matched skill domain filter")
 
         return RetrievalResult(record=record, score=score, reasons=reasons)
+
+    @staticmethod
+    def _tokenize(text: str) -> set[str]:
+        import re
+        stop_words = {
+            "i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", "yours", 
+            "he", "him", "his", "she", "her", "it", "its", "they", "them", "their", "what", "which", 
+            "who", "whom", "this", "that", "these", "those", "am", "is", "are", "was", "were", "be", 
+            "been", "being", "have", "has", "had", "having", "do", "does", "did", "doing", "a", "an", 
+            "the", "and", "but", "if", "or", "because", "as", "until", "while", "of", "at", "by", "for", 
+            "with", "about", "against", "between", "into", "through", "during", "before", "after", 
+            "above", "below", "to", "from", "up", "down", "in", "out", "on", "off", "over", "under", 
+            "again", "further", "then", "once", "here", "there", "when", "where", "why", "how", "all", 
+            "any", "both", "each", "few", "more", "most", "other", "some", "such", "no", "nor", "not", 
+            "only", "own", "same", "so", "than", "too", "very", "s", "t", "can", "will", "just", "don", 
+            "should", "now", "make", "need"
+        }
+        text_clean = re.sub(r'[^a-zA-Z0-9\s]', ' ', text.lower())
+        tokens = set(text_clean.split())
+        return tokens - stop_words
+
 

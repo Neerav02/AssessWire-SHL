@@ -29,7 +29,7 @@ class ConversationRouter:
             return RoutedTurn(state=ConversationState.COMPARING, query_text=text)
 
         has_prior_recommendations = any(
-            message.role == "assistant" and "recommend" in message.content.lower()
+            message.role == "assistant" and any(term in message.content.lower() for term in ["recommend", "shortlist", "catalog-backed"])
             for message in messages[:-1]
         )
         if has_prior_recommendations:

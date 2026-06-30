@@ -25,8 +25,13 @@ class ChatService:
         if routed.state == ConversationState.COMPARING:
             return self.responses.comparison_placeholder()
 
+        query_text = routed.query_text
+        if routed.state == ConversationState.REFINING:
+            user_messages = [msg.content for msg in request.messages if msg.role == "user"]
+            query_text = " ".join(user_messages)
+
         retrieval_query = RetrievalQuery(
-            text=routed.query_text,
+            text=query_text,
             limit=settings.max_recommendations,
         )
         results = self.retriever.search(retrieval_query)

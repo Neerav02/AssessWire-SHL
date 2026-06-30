@@ -1,0 +1,324 @@
+[
+  {
+    "assessment_name": "SHL Verify Numerical Reasoning Test",
+    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-numerical-reasoning/",
+    "test_type": [
+      "Ability and Aptitude"
+    ],
+    "description": "Measures a candidate's ability to analyze, interpret, and draw logical conclusions from numerical data presented in tables, charts, and graphs. Essential for roles requiring data analysis and financial decisions.",
+    "duration_minutes": 20,
+    "remote_testing": true,
+    "role_families": [
+      "finance",
+      "data_science"
+    ],
+    "skill_domains": [
+      "cognitive_ability",
+      "data_analysis"
+    ],
+    "seniority": [
+      "entry",
+      "mid",
+      "manager"
+    ]
+  },
+  {
+    "assessment_name": "SHL Verify Inductive Reasoning Test",
+    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-inductive-reasoning/",
+    "test_type": [
+      "Ability and Aptitude"
+    ],
+    "description": "Assesses logical problem-solving skills, abstract thinking, and the ability to identify patterns, relationships, and rules in sequences of shapes or symbols.",
+    "duration_minutes": 18,
+    "remote_testing": true,
+    "role_families": [
+      "sales"
+    ],
+    "skill_domains": [
+      "cognitive_ability",
+      "job_knowledge"
+    ],
+    "seniority": [
+      "entry",
+      "mid"
+    ]
+  },
+  {
+    "assessment_name": "SHL Verify Deductive Reasoning Test",
+    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-deductive-reasoning/",
+    "test_type": [
+      "Ability and Aptitude"
+    ],
+    "description": "Evaluates the candidate's ability to apply logical rules, make deductions, and solve problems based on incomplete information or logical arguments. Critical for coding, legal, and analytical roles.",
+    "duration_minutes": 18,
+    "remote_testing": true,
+    "role_families": [
+      "software_engineering"
+    ],
+    "skill_domains": [
+      "programming",
+      "cognitive_ability"
+    ],
+    "seniority": [
+      "entry",
+      "mid",
+      "manager"
+    ]
+  },
+  {
+    "assessment_name": "SHL Verify G+ (General Ability Test)",
+    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-g-plus/",
+    "test_type": [
+      "Ability and Aptitude"
+    ],
+    "description": "A comprehensive cognitive assessment combining numerical, deductive, and inductive reasoning tasks into a single test. Ideal for broad talent screening across multiple skills.",
+    "duration_minutes": 36,
+    "remote_testing": true,
+    "role_families": [
+      "graduate"
+    ],
+    "skill_domains": [
+      "cognitive_ability",
+      "job_knowledge"
+    ],
+    "seniority": [
+      "entry",
+      "mid"
+    ]
+  },
+  {
+    "assessment_name": "SHL Verify Verbal Reasoning Test",
+    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-verbal-reasoning/",
+    "test_type": [
+      "Ability and Aptitude"
+    ],
+    "description": "Evaluates the candidate's ability to read, comprehend, and interpret complex written passages, business reports, and instruction sets. Important for communication-heavy and research roles.",
+    "duration_minutes": 19,
+    "remote_testing": true,
+    "role_families": [],
+    "skill_domains": [
+      "cognitive_ability",
+      "language"
+    ],
+    "seniority": [
+      "entry",
+      "mid",
+      "manager",
+      "executive"
+    ]
+  },
+  {
+    "assessment_name": "Occupational Personality Questionnaire (OPQ32)",
+    "url": "https://www.shl.com/en/assessments/personality-behavior/opq/",
+    "test_type": [
+      "Personality and Behavior"
+    ],
+    "description": "The industry standard for measuring workplace personality, style, and behavioral preferences. Assesses 32 key personality dimensions mapped directly to job competencies, leadership suitability, and culture fit.",
+    "duration_minutes": 45,
+    "remote_testing": true,
+    "role_families": [
+      "leadership"
+    ],
+    "skill_domains": [
+      "cognitive_ability",
+      "personality_behavior"
+    ],
+    "seniority": [
+      "mid",
+      "manager",
+      "executive"
+    ]
+  },
+  {
+    "assessment_name": "SHL Verify Calculation Test",
+    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-calculation/",
+    "test_type": [
+      "Ability and Aptitude"
+    ],
+    "description": "Measures basic mathematical computation skills, speed, and accuracy in fundamental arithmetic operations. Used heavily for entry-level finance, clerk, and admin roles.",
+    "duration_minutes": 10,
+    "remote_testing": true,
+    "role_families": [
+      "customer_service",
+      "finance",
+      "operations"
+    ],
+    "skill_domains": [
+      "cognitive_ability",
+      "job_knowledge"
+    ],
+    "seniority": [
+      "entry",
+      "mid"
+    ]
+  },
+  {
+    "assessment_name": "SHL Verify Checking Test",
+    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-checking/",
+    "test_type": [
+      "Ability and Aptitude"
+    ],
+    "description": "Assesses attention to detail, precision, and speed in comparing lists of data, strings, and alphanumeric codes. Ideal for quality control, administration, and data entry roles.",
+    "duration_minutes": 5,
+    "remote_testing": true,
+    "role_families": [
+      "customer_service",
+      "operations"
+    ],
+    "skill_domains": [
+      "cognitive_ability"
+    ],
+    "seniority": [
+      "entry"
+    ]
+  },
+  {
+    "assessment_name": "SHL Verify Mechanical Comprehension Test",
+    "url": "https://www.shl.com/en/assessments/cognitive-ability/verify-mechanical-comprehension/",
+    "test_type": [
+      "Ability and Aptitude"
+    ],
+    "description": "Measures understanding of physical and mechanical principles, forces, electrical circuits, and machinery operations. Best for engineers, technicians, and manual roles.",
+    "duration_minutes": 25,
+    "remote_testing": true,
+    "role_families": [
+      "software_engineering",
+      "operations"
+    ],
+    "skill_domains": [
+      "cognitive_ability"
+    ],
+    "seniority": [
+      "entry",
+      "mid"
+    ]
+  },
+  {
+    "assessment_name": "SHL Situational Judgment Test (SJT)",
+    "url": "https://www.shl.com/en/assessments/personality-behavior/situational-judgment/",
+    "test_type": [
+      "Personality and Behavior"
+    ],
+    "description": "Evaluates how candidates respond to realistic, challenging workplace scenarios, decision-making conflicts, and professional dilemmas. Measures core workplace behavior and judgment.",
+    "duration_minutes": 30,
+    "remote_testing": true,
+    "role_families": [],
+    "skill_domains": [
+      "personality_behavior",
+      "situational_judgement"
+    ],
+    "seniority": [
+      "entry",
+      "mid",
+      "manager"
+    ]
+  },
+  {
+    "assessment_name": "SHL Java Programming Test",
+    "url": "https://www.shl.com/en/assessments/skills-knowledge/coding-java/",
+    "test_type": [
+      "Knowledge and Skills"
+    ],
+    "description": "Measures practical software engineering skills, syntax knowledge, and coding proficiency in the Java programming language. Includes debugging, algorithmic thinking, and object-oriented design.",
+    "duration_minutes": 40,
+    "remote_testing": true,
+    "role_families": [
+      "software_engineering"
+    ],
+    "skill_domains": [
+      "programming",
+      "job_knowledge"
+    ],
+    "seniority": [
+      "entry",
+      "mid",
+      "manager"
+    ]
+  },
+  {
+    "assessment_name": "SHL C++ Programming Test",
+    "url": "https://www.shl.com/en/assessments/skills-knowledge/coding-cpp/",
+    "test_type": [
+      "Knowledge and Skills"
+    ],
+    "description": "Assesses C++ programming aptitude, syntax, debugging, and memory management. Evaluates the candidate's understanding of pointers, templates, and performance optimization.",
+    "duration_minutes": 40,
+    "remote_testing": true,
+    "role_families": [
+      "software_engineering"
+    ],
+    "skill_domains": [
+      "programming",
+      "cognitive_ability"
+    ],
+    "seniority": [
+      "entry",
+      "mid"
+    ]
+  },
+  {
+    "assessment_name": "SHL Python Coding Test",
+    "url": "https://www.shl.com/en/assessments/skills-knowledge/coding-python/",
+    "test_type": [
+      "Knowledge and Skills"
+    ],
+    "description": "Evaluates core programming skills, scripting ability, data structures, and standard library knowledge using Python. Suitable for software engineers, data analysts, and automation developers.",
+    "duration_minutes": 35,
+    "remote_testing": true,
+    "role_families": [
+      "software_engineering",
+      "data_science"
+    ],
+    "skill_domains": [
+      "programming",
+      "cognitive_ability",
+      "job_knowledge"
+    ],
+    "seniority": [
+      "entry",
+      "mid"
+    ]
+  },
+  {
+    "assessment_name": "SHL Customer Service Situational Judgment Test",
+    "url": "https://www.shl.com/en/assessments/personality-behavior/customer-service-sjt/",
+    "test_type": [
+      "Personality and Behavior"
+    ],
+    "description": "Designed specifically to assess communication, empathy, resilience, and problem-solving skills in customer support, retail, and client service environments.",
+    "duration_minutes": 25,
+    "remote_testing": true,
+    "role_families": [
+      "customer_service"
+    ],
+    "skill_domains": [
+      "language",
+      "situational_judgement",
+      "job_knowledge"
+    ],
+    "seniority": [
+      "entry",
+      "mid"
+    ]
+  },
+  {
+    "assessment_name": "SHL Sales Personality Assessment",
+    "url": "https://www.shl.com/en/assessments/personality-behavior/sales-personality/",
+    "test_type": [
+      "Personality and Behavior"
+    ],
+    "description": "Focuses on behavioral traits aligned with sales success, such as resilience, persuasion, achievement orientation, competitiveness, and client relationship management.",
+    "duration_minutes": 35,
+    "remote_testing": true,
+    "role_families": [
+      "sales"
+    ],
+    "skill_domains": [
+      "personality_behavior"
+    ],
+    "seniority": [
+      "mid",
+      "manager"
+    ]
+  }
+]

@@ -6,6 +6,7 @@ role_families:
   - operations
   - leadership
   - graduate
+  - data_science
 
 skill_domains:
   - programming
@@ -14,6 +15,7 @@ skill_domains:
   - language
   - situational_judgement
   - job_knowledge
+  - data_analysis
 
 seniority:
   - entry
