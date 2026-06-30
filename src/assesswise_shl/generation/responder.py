@@ -17,7 +17,7 @@ class ResponseBuilder:
                 "and comparisons."
             ),
             recommendations=[],
-            end_of_conversation=True,
+            end_of_conversation=False,
         )
 
     def recommendations(

@@ -11,7 +11,7 @@ class RoutedTurn:
 
 
 class ConversationRouter:
-    off_topic_terms = {"salary", "legal", "lawsuit", "weather", "recipe", "stock price", "interview question", "cfo", "joke"}
+    off_topic_terms = {"salary", "legal", "lawsuit", "weather", "recipe", "stock price"}
     injection_terms = {"ignore previous", "system prompt", "developer message", "jailbreak"}
     compare_terms = {"compare", "difference", "versus", " vs ", "better than"}
 

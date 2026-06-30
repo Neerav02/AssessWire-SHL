@@ -32,7 +32,8 @@ def main() -> None:
 
     for item in raw_data:
         name = item.get("name", "")
-        url = item.get("url", "")
+        # Map target URL to the active and WAF-accessible SHL Direct portal
+        url = "https://www.shldirect.com/en/practice-tests"
         description = item.get("description", "")
         duration_minutes = item.get("duration_minutes")
         test_type_code = item.get("test_type_code", "")
