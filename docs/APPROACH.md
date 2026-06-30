@@ -41,7 +41,8 @@ The recommender does not let one open-ended LLM prompt decide everything. Turn b
 
 The evaluation harness should replay the official traces and custom adversarial probes. Each run should track schema validity, recall@10, out-of-catalog URLs, and behavior-probe outcomes.
 
+The assignment PDF references 10 public conversation traces, but the provided PDF contains placeholder text rather than a real download URL. Once the trace zip is obtained from the assignment portal/provider, place the trace JSON files in `data/traces/` and run `scripts/replay_traces.py` against the deployed or local endpoint.
+
 ## Trade-Offs
 
 The first version favors transparency and deterministic safety over a heavy learned reranker. With more time, the system can add FAISS-backed embeddings, a stronger reranker, and a larger manually audited taxonomy.
-

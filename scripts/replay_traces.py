@@ -32,7 +32,8 @@ def main() -> None:
                 json.dumps(
                     {
                         "trace": trace_path.name,
-                        "state": result.get("state"),
+                        "has_reply": bool(result.get("reply")),
+                        "end_of_conversation": result.get("end_of_conversation"),
                         "recommendation_count": len(result.get("recommendations", [])),
                     },
                     indent=2,
@@ -42,4 +43,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: assesswise-shl-recommender
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn assesswise_shl.api.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHONPATH
+        value: src
+      - key: APP_ENV
+        value: production
+      - key: CATALOG_PATH
+        value: data/catalog/catalog_clean.json
+      - key: MAX_RECOMMENDATIONS
+        value: "10"
+      - key: GROQ_API_KEY
+        sync: false

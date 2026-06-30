@@ -27,8 +27,7 @@ class ChatService:
 
         retrieval_query = RetrievalQuery(
             text=routed.query_text,
-            limit=min(request.max_recommendations, settings.max_recommendations),
+            limit=settings.max_recommendations,
         )
         results = self.retriever.search(retrieval_query)
         return self.responses.recommendations(routed.state, results)
-

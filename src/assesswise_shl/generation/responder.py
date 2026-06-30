@@ -5,19 +5,19 @@ from assesswise_shl.schemas import ChatResponse, ConversationState, Recommendati
 class ResponseBuilder:
     def clarify(self) -> ChatResponse:
         return ChatResponse(
-            state=ConversationState.CLARIFYING,
-            message="What role family or skill area should the assessment shortlist focus on?",
+            reply="What role family or skill area should the assessment shortlist focus on?",
             recommendations=[],
+            end_of_conversation=False,
         )
 
     def out_of_scope(self) -> ChatResponse:
         return ChatResponse(
-            state=ConversationState.OUT_OF_SCOPE,
-            message=(
+            reply=(
                 "I can help only with SHL Individual Test Solution recommendations, refinements, "
                 "and comparisons."
             ),
             recommendations=[],
+            end_of_conversation=True,
         )
 
     def recommendations(
@@ -25,38 +25,34 @@ class ResponseBuilder:
     ) -> ChatResponse:
         if not results:
             return ChatResponse(
-                state=state,
-                message=(
+                reply=(
                     "I do not have enough catalog-backed matches yet. Please provide a role, "
                     "skill area, or assessment type."
                 ),
                 recommendations=[],
+                end_of_conversation=False,
             )
 
         recommendations = [
             Recommendation(
-                assessment_name=result.record.assessment_name,
+                name=result.record.assessment_name,
                 url=result.record.url,
-                test_type=result.record.test_type,
-                description=result.record.description or None,
-                duration_minutes=result.record.duration_minutes,
-                remote_testing=result.record.remote_testing,
+                test_type=", ".join(result.record.test_type),
             )
             for result in results
         ]
         return ChatResponse(
-            state=state,
-            message="Here is a catalog-backed shortlist based on the current constraints.",
+            reply="Here is a catalog-backed shortlist based on the current constraints.",
             recommendations=recommendations,
+            end_of_conversation=False,
         )
 
     def comparison_placeholder(self) -> ChatResponse:
         return ChatResponse(
-            state=ConversationState.COMPARING,
-            message=(
+            reply=(
                 "I can compare assessments once both names can be matched to catalog records. "
                 "Please provide the exact SHL assessment names."
             ),
             recommendations=[],
+            end_of_conversation=False,
         )
-

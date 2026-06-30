@@ -23,7 +23,6 @@ class ChatMessage(BaseModel):
 
 class ChatRequest(BaseModel):
     messages: list[ChatMessage] = Field(min_length=1)
-    max_recommendations: int = Field(default=10, ge=1, le=10)
 
     @field_validator("messages")
     @classmethod
@@ -34,16 +33,12 @@ class ChatRequest(BaseModel):
 
 
 class Recommendation(BaseModel):
-    assessment_name: str = Field(min_length=1)
+    name: str = Field(min_length=1)
     url: HttpUrl
-    test_type: list[str] = Field(min_length=1)
-    description: str | None = None
-    duration_minutes: int | None = Field(default=None, ge=1)
-    remote_testing: bool | None = None
+    test_type: str = Field(min_length=1)
 
 
 class ChatResponse(BaseModel):
-    message: str = Field(min_length=1)
-    state: ConversationState
+    reply: str = Field(min_length=1)
     recommendations: list[Recommendation] = Field(default_factory=list, max_length=10)
-
+    end_of_conversation: bool = False
